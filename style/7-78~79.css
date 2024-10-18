@@ -1,0 +1,19 @@
+p {
+    /* 加了!important系統會以他為最優先設定，因此他會破壞整個順序系統，建議不要使用*/
+    color: #A833B9 !important;
+    font-size: 50px;
+}
+
+/* css是由上往下看的，因此當出現兩個選擇器裡的設定衝突的情況下會優先選下面的設定 */
+p {
+    color: #DBD56E;
+}
+
+/* css選擇器的優先具體性如下: ID> Class = 偽類 >其他選擇器(p、button)，因此下面的例子css會先執行class裡面的設定，不論他是上還是下 */
+.push button {
+    color: #EE4266;
+}
+
+button {
+    color: #A833B9;
+}

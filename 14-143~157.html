@@ -1,0 +1,69 @@
+<!-- 開始正式進入到Javascript環節!!! -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 146:Javascript裡面的運算符號
+        5 + 3  //8
+        5 - 3  //2
+        6 / 2  //0
+        6 * 2  //12
+        9 % 2  //1
+        2 ** 4  //16
+        0 / 0  //NaN
+        1 + NaN  //NaN，並且NaN在Javascript是一個數字
+
+        // 149:變數的介紹:
+        let year = 2024;
+        let num = 6;
+        year = year + 1;
+        sum = year + num;
+
+        // 150:變數加減的寫法
+        let Live = 9;
+        Live = Live - 5; //4
+        Live--; //3
+        Live = Live + 5; //8
+        Live++; //9
+
+        //151:i++與++i的差別
+        let i = 5;
+        let result = i++;
+        result  //他還是5，因為i++是後遞增運算符，他會回傳遞增前的值，然後才會執行i++ || 反之如果是++i他會先執行+1然後才會回傳
+        i //它就變成6了
+
+        //152:Const以及Var變量
+        const Pi = 3.14; //const代表不會改變的數字或字串
+        var apple = 18;  //var跟let很像，只不過let比較新，兩個同樣都是代表可變化的數字或字串
+
+        //153:布林值的介紹
+        let gameOver = true; //javascript的布林值要小寫、Python才是大寫
+        let gameStart = false;
+
+        //154:正確的幫你的變數命名，小駝峰大駝峰，盡量不要做無意義的命名
+        let n = 5; //錯誤示範，n是甚麼東西
+        let yourmother = "hot"; //錯誤示範，要遵循小駝峰大駝峰的命名方式
+        let yourMother = "sexy"; //正確，第一個字小寫、後面的第一個字大寫
+
+        //156:介紹字串，沒什麼好記的，比較需要注意的是如果頭是'尾就一定也要是'不能' "
+        let str = '你好啊，我被單引號包起來了'
+        let str2 = "我則是被雙引號括起來了"
+
+        //157:講到了索引值、長度(只有字串才有)、字串的連接、更新、以及當字串遇到數字時的強制轉行(統一轉成字串)
+        let firstName = "林"
+        let lastName = "孟軒"
+        print(firstName[0]) //林 索引值從0開始
+        print(lastName[0])  //孟
+        print(lastName.length) //2 長度則是從1開始，並且只有字串有長度
+
+    </script>
+</body>
+
+</html>

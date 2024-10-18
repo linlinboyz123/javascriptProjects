@@ -1,0 +1,19 @@
+body {
+    background-color: #53F4FF;
+}
+
+/* 空白代表著修改主標籤裡面的甚麼次標籤，修改ol標籤裡的a標籤 */
+ol a {
+    color: #982649;
+}
+
+/* 空白代表著修改主標籤裡面的甚麼次標籤，修改div標籤裡的a標籤 */
+div a {
+    color: #7C8483
+}
+
+/* 修改class裡面的p段落 */
+.text p {
+    color: #F194B4;
+    font-size: 20px;
+}

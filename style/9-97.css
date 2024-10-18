@@ -1,0 +1,32 @@
+body {
+    background-color: #151b29;
+    /* 文字垂直置中四要素 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 文字垂直置中四要素 */
+}
+
+button {
+    /* 把按鈕的背景色變得跟body一樣 */
+    background: none;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    /* 全部轉變為hover的設定，時間為0.25秒 */
+    transition: all 0.25s;
+}
+
+button:hover {
+    /* 邊框的顏色改成黃色 */
+    border-color: #f1ff5c;
+    color: white;
+    /* 負的代表往上，往上平移 */
+    transform: translateY(-0.25em);
+    /* 按鈕的陰影，分別為X軸、Y軸、模糊程度以及擴散範圍(就是陰影的大小) */
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    /* 鼠標變成米老鼠的手 */
+    cursor: pointer;
+}

@@ -1,0 +1,45 @@
+<!--關於input(form label radio email select_option password button)綜合練習的教學-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+    <form action="">
+        <label for="F_name">First Name</label>
+        <input type="text" name="F_name" id="F_name">
+        <label for="L_name">Last Name</label>
+        <input type="text" name="L_name" id="L_name">
+        <p>Select a Race:</p>
+        <div>
+            <input type="radio" name="Fun Run" id="Fun Run">
+            <label for="Fun Run">Fun Run 5k</label>
+            <br>
+            <input type="radio" name="Half Marathon" id="Half Marathon">
+            <label for="Half Marathon">Half Marathon</label>
+            <br>
+            <input type="radio" name="Full Marathon" id="Full Marathon">
+            <label for="Full Marathon">Full Marathon</label>
+        </div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+        <div>
+            <label for="Age">Select Age Group</label>
+            <select name="Age" id="Age">
+                <option value="">under 18</option>
+                <option value="18~30">18~30</option>
+                <option value="30~50">30~50</option>
+            </select>
+        </div>
+        <button>Registart</button>
+    </form>
+</body>
+
+</html>

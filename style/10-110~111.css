@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 1400px;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid black;
+    display: flex;
+
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    /* 他會以400px為目標，盡可能的把每個元素再不超過容器大小的情況下把每個元素都增加到最大400px */
+    flex-basis: 200px;
+}
+
+div:nth-of-type(1) {
+    /* 他的成長速度為其他元素的2倍，當越過了你設定的basis他會無限延伸直到碰到容器的邊界，預設為1*/
+    flex-grow: 2;
+}
+
+div:nth-of-type(5) {
+    /* 他的成長速度為其他元素的0.5倍，預設為1*/
+    flex-shrink: 2;
+}
+
+div:nth-of-type(2) {
+    /*flex速記法:第一個grow、第二個shrink、第三個basis*/
+    flex: 2 1 200px;
+}

@@ -1,0 +1,34 @@
+<!--關於訊息驗證(required、minlength、maxlength)以及輸入要求的一些模式(pattern)的教學-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>請詳細的打出你的個人資訊</h1>
+    <form action="/ssss">
+        <p>
+            <label for="name">請問您的大名是:</label>
+            <input type="text" name="name" id="name" required><!--required代表不能留白、一定要輸入-->
+        </p>
+
+        <p>
+            <label for="Phone_number">請輸入你的電話號碼:</label>
+            <input type="number" name="Phone_number" id="Phone_number" required minlength="1" maxlength="10">
+        </p>
+
+        <p>
+            <label for="email">請輸入你的電子郵件:</label>
+            <input type="email" name="email" id="email"> <!--Email有自己的模式，他會確認@以及@後面至少要有一個數字-->
+            <label for="url">請輸入超連結:</label>
+            <input type="url" name="url" id="url"><!--模式:http://-->
+        </p>
+        <button>提交</button>
+    </form>
+</body>
+
+</html>

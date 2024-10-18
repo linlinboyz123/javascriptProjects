@@ -1,0 +1,14 @@
+/* 直接選擇器:他只會管section裡面的跟他有直接接觸的P標籤，他不會管被其他標籤包住的P標籤 */
+section>p {
+    color: #FFF07C;
+}
+
+/* 相鄰選擇器:他只會更改最接近label的input標籤 */
+label+input {
+    background-color: #685369;
+}
+
+/* 屬性選擇器:可以選擇你要的屬性作特定的修改 */
+input[type="password"] {
+    color: #058ED9;
+}

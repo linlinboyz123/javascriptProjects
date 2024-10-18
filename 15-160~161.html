@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //160:介紹模板文字，可以節省很多空字串還有一堆加號的較方便的寫法
+        let product = "甜甜圈";
+        let price = "39";
+        let num = "5";
+        document.write(`我買了${num}個${product}總共花了$${price * num}元`);  //超方便的寫法~  `${}`
+
+        //161:簡單介紹Null跟undefined
+        let none = null; //null是可以當成變數的，但undefined不行，undefined比較像是javascript的一種警告，告訴你這東西未被定義
+
+        //162:隨機產生1~9的數字，random這個數學方法可以隨機產生10進位的一串數字
+        const step1 = Math.random();  //0.59611048928
+        const step2 = step1 * 10;  //5.96.......
+        const step3 = Math.floor(step2); //5
+        const step4 = step3 + 1; //6
+        let word = Math.floor(Math.random() * 10) + 1; //+1的用意是為了不要讓它顯示0
+        alert(word);
+
+        //165:介紹比較運算符:> < = 
+        15 > 4 // true
+        23 > 34 // false
+        5 >= 5  //true
+            - 10 < 5 //true
+
+        //166:相等運算符更詳細的介紹
+        1 == 1 //回傳true，他會比較兩個值是否一樣，但不會關心它們的類型
+        1 == "1" //也會回傳true，但其實字串的1跟數字1是不一樣的，他會強制把兩個值的類型轉成同一個進行比較
+        1 === "1" //這個就會回傳flase
+        1 != 1 //回傳false，!=代表的是:是否不等於 1是否不等於1，答案是false 1是等於1的
+
+        //167:介紹console.log、alert以及Prompt的用法
+        console.log("你好");
+        alert("我是一個彈跳視窗");
+        prompt("請輸入一個數字");
+
+
+    </script>
+</body>
+
+</html>

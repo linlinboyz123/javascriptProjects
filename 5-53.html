@@ -1,0 +1,46 @@
+<!--關於更多input(checkbox、radiobox、selectOption)的教學-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>關於人生的重大選擇</h1>
+    <form action="/sads">
+        <h2>請選擇你想當男生還是女生:</h2>
+        <label for="sex1">男生:</label>
+        <input type="radio" id="sex1" name="sex" value="gender"><!--radio如果不想要複選必須將選項的name都取名一樣-->
+        <label for="sex2">女生:</label>
+        <input type="radio" id="sex2" name="sex" value="woman">
+
+        <h2>請選擇你想要有的能力(最多只能選擇三樣):</h2>
+        <label for="ability1">變帥變美</label>
+        <input type="checkbox" name="ability1" id="ability1" value="pretty"><!--如果不設定value他每個傳回服務器端的數據都是on-->
+        <label for="ability2">頭腦聰明</label>
+        <input type="checkbox" name="ability2" id="ability2" value="smart">
+        <label for="ability3">社交牛逼</label>
+        <input type="checkbox" name="ability3" id="ability3" value="social">
+        <label for="ability4">有錢人家</label>
+        <input type="checkbox" name="ability4" id="ability4" value="rich">
+        <label for="ability5">看透人心</label>
+        <input type="checkbox" name="ability5" id="ability5" value="find out">
+
+        <h2>人生最想要完成哪一件大事:</h2>
+        <select name="想要完成的大事" id="想要完成的大事">
+            <option value="">請選擇</option>
+            <option value="整形">整形變帥哥</option>
+            <option value="聰明">聰明變柯P</option>
+            <option value="社交">社交變牛逼</option>
+        </select>
+
+        <p>
+            <button>提交</button>
+        </p>
+    </form>
+</body>
+
+</html>

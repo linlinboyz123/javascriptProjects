@@ -1,0 +1,26 @@
+html {
+    font-size: 30px;
+}
+
+/* 將父元素的字體大小改為30px */
+section {
+    font-size: 100px;
+}
+
+h2 {
+    /* 相對單位，會根據他的父元素來改變他的大小，目前是1em所以就是父元素的1倍 */
+    font-size: 1em;
+}
+
+
+ul {
+    /* em的缺陷就是他會根據父元素的大小去堆疊他自己下面的子元素，所以會一直x0.8 x0.8下去，但rem不會有這種情況 */
+    font-size: 0.8rem;
+}
+
+button {
+    /* 他的父元素是html */
+    font-size: 2em;
+    /* 除了字體，其他屬性例如padding、margin、border這些都是根據本身元素的字體大小去做改變，而不是看父元素 */
+    margin-left: 1em;
+}

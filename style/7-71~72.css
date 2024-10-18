@@ -1,0 +1,19 @@
+body {
+    background-color: #FFE5D9;
+}
+
+p {
+    color: #FDB833;
+}
+
+/* ID用#表示，並且ID具有獨一無二的特性，每個名字只能用一次，並且不要常用ID */
+#First_Line {
+    color: #9D8189;
+}
+
+/* class用.表示，並且class像是替這些標籤組一個群組，他可以套用在不同的標籤裡，不像ID有獨一無二的特性 */
+.Lorem_tag {
+    background-color: red;
+    color: white;
+    font-size: 25px;
+}

@@ -1,0 +1,39 @@
+html {
+    /* 看他詳細資料的標題 */
+    font-family: 'Noto Sans TC Black';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+.head {
+    font-size: 70px;
+    margin: 0;
+}
+
+.neck {
+    margin: 5px 0 40px;
+}
+
+.nac {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 50px;
+    margin: 10px 20px;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+}
+
+.account {
+    display: inline;
+
+}

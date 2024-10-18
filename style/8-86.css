@@ -1,0 +1,18 @@
+h1 {
+    border: 3px solid red;
+    /* 在文字與邊框的距離上下左右各添加30px的距離，tip:瀏覽器的綠色區域為padding */
+    padding: 30px;
+    text-align: center;
+}
+
+button {
+    /* 上下的padding為10、左右為20 */
+    padding: 10px 20px;
+}
+
+p {
+    border: 3px solid blue;
+    text-align: center;
+    /* 以順時鐘的方式再跑上右下左 */
+    padding: 20px 20px 30px 30px
+}

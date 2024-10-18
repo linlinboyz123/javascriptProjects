@@ -1,0 +1,19 @@
+body {
+    background-color: brown;
+}
+
+.rgba {
+    width: 500px;
+    height: 500px;
+    /* 透明度1是完全不透明、0是完全透明，並且rgba只會修改單一屬性，不會套用在整個secton上 */
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 20px;
+}
+
+.opacity {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    /* 他跟rgba的差別就在於他可以把整個區域都變成透明的，不同於rgba只能修改單一屬性 */
+    opacity: 0.4;
+}

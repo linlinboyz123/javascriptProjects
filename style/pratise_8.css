@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.FB {
+    text-align: center;
+    padding: 2px 80px;
+    margin-left: 38%;
+}
+
+.Google {
+    width: 100%;
+    border-radius: 10px;
+}
+
+input[type="email"] {
+    width: 100%;
+}
+
+input[type="password"] {
+    width: 100%;
+}
+
+div span {
+    padding-left: 89%;
+}
+
+.submit {
+    width: 100%;
+    border-radius: 10px;
+}

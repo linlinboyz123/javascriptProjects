@@ -1,0 +1,15 @@
+/* 更改每行第一個的設定 */
+p::first-letter {
+    color: #048A81;
+}
+
+/* 更改每行文字的設定 */
+p::first-line {
+    background-color: #59594A;
+}
+
+/* 更改框p段落文字的設定 */
+p::selection {
+    background-color: #E13700;
+    color: aquamarine;
+}

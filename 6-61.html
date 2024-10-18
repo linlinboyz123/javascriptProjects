@@ -1,0 +1,26 @@
+<!--關於css嵌入的基本介紹的教學-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <link rel="stylesheet" href="style/Css1.css"> <!--外嵌CSS語法-->
+    <style>
+        h2 {
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <!--第一種:直接嵌入在標籤元素裡面，最不推薦這種用法，因為如果妳有很多元素就要寫很多次-->
+    <h1 style="color: green;">誰的頭頂是綠色的呀~</h1>
+    <!--第二種:嵌入在文件裡面而不是元素，也不是很推薦，因為如果你有多個檔案的話就要重複寫-->
+    <h2>我喜歡的女生頭頂是金色的</h2>
+    <!--第三種:新增一個css的檔案，外嵌在外面，最方便，可以套用在每個檔案裡面，只要輸入link的語法就好了-->
+    <h3>但是她不喜歡我嗚嗚</h3>
+</body>
+
+</html>

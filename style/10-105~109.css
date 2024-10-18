@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 1000px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    /* 你可以把他想成讓所有子元素都向這個父元素看齊，以他為中心做變化，且他排列的預設是從左到右(row)*/
+    display: flex;
+    /* 你可以把它順序顛倒，變成由右到左(row-reverse)、由上到下(column)、由下到上(column-reverse) */
+    flex-direction: row;
+    /* 他可以改變內容分布的位置，取決於它的主軸(flex-direction)在哪，且他是改變左右(水平) */
+    justify-content: center;
+    /* 讓超出原本容器大小的內容不會被壓縮，而是換到下一行 */
+    flex-wrap: wrap;
+    /* 改變換行的間距(讓換行的內容都擠在中間) */
+    align-content: center;
+    /* 讓內容垂直置中(改變上下(垂直)) */
+    align-items: center;
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+}
+
+div:nth-of-type(2) {
+    /* 更改單一屬性，他跟align-content有重疊到，如果你有設定他就不會被更改到 */
+    align-self: flex-start;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //158:介紹string裡面的方法，只有長度是屬性其他都是方法
+        let mood = "today is a good day ";
+        document.write(mood.length) //包含空格20
+        document.write(mood.toUpperCase()) //有()代表他是方法，也代表他要執行全部轉為大寫這個指令
+        document.write(mood.trim())  //把字串當中的空白給去掉
+        document.write(mood.toUpperCase().toLowerCase()) //先執行大寫，接著在變小寫
+        document.write(mood)  //字串的方法執行後會生成全新的字串，並不會改到原本的字串
+
+        //159:介紹更多關於字串方法的用法
+        let test = "my name is sam I am so cool"
+        alert(test.indexOf("sam")) //回傳第11個索引值，主要是找出字串有沒有我們要的值
+        alert(test.slice(0, 14))  //第一個索引值有包含當前的值，第二個沒有，也可以從尾(-1)數過來
+        alert(test.replace("sam", "Wentong")) //把字串裡的sam改成Wentong
+        alert(test.repeat(5))  //重複這個字串幾次
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+h1 {
+    /* 文字對齊是根據標籤元素的長寬做對齊，不是視窗本身 */
+    text-align: center;
+    font-weight: 700px;
+    /*新增一條穿過文字的直線*/
+    text-decoration: line-through;
+}
+
+h2 {
+    /* 更改文字字體，CSS的改法只要直接打字體名稱就好了，逗點後面的是備用的字體 */
+    font-family: Microsoft YaHei, gadugi;
+}
+
+p {
+    /* 文字間距5px */
+    letter-spacing: 5px;
+    /* 文字行距 */
+    line-height: 50px;
+}
+
+a {
+    /*把a標籤預設的底線移除掉*/
+    text-decoration: none;
+}
+
+button {
+    font-weight: 700px;
+    width: 100%;
+    text-align: center;
+}

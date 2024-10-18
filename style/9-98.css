@@ -1,0 +1,40 @@
+section {
+    width: 50%;
+    height: 500px;
+    margin: 20px auto;
+}
+
+.one {
+    /*目前研究只能顯示網頁上的圖片*/
+    background-image: url("https://i.pinimg.com/564x/f8/2f/b3/f82fb3dbdc46d430ec9cae9e29fd7e8c.jpg");
+    /* 他會縮放或放大原本的圖片，變成你設定寬高大小的這個盒子*/
+    background-size: cover;
+    transition: background-position 0.5s;
+}
+
+.one:hover {
+    /* 讓你的圖片往下移置底部 */
+    background-position: bottom;
+}
+
+.one:active {
+    /* 讓你的圖片往下移置底部 */
+    background-position: center;
+}
+
+.two {
+    /*目前研究只能顯示網頁上的圖片*/
+    background-image: url("https://i.pinimg.com/564x/f8/2f/b3/f82fb3dbdc46d430ec9cae9e29fd7e8c.jpg");
+    /* 他會保持圖片原來的大小的情況下，用重複的圖片填滿整個盒子*/
+    background-size: contain;
+
+}
+
+.three {
+    /* 速寫法:圖片位置(background-position)、圖片大小(background-size)、 圖片重複(background-repeat)、背景顏色(background-color)、圖片url(background-image)*/
+    background: center/40% no-repeat blue url("https://i.pinimg.com/564x/f8/2f/b3/f82fb3dbdc46d430ec9cae9e29fd7e8c.jpg");
+}
+
+.four {
+    background: center/40% no-repeat url("https://i.pinimg.com/564x/f8/2f/b3/f82fb3dbdc46d430ec9cae9e29fd7e8c.jpg");
+}

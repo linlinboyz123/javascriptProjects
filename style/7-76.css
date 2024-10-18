@@ -1,0 +1,26 @@
+/* class:game1的標籤做修改 */
+.game1:hover {
+    background-color: #E4E6C3;
+}
+
+/* class:game2第一個相鄰的button做修改 */
+.game2+button:active {
+    background-color: #59CD90;
+}
+
+.game3+button:hover {
+    background-color: #C3BEF7;
+}
+
+.game3+button:active {
+    background-color: #8A4FFF;
+}
+
+/* 每兩個修改p標籤 */
+p:nth-of-type(2n) {
+    background-color: #826AED;
+}
+
+h1 {
+    color: aquamarine;
+}

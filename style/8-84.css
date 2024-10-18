@@ -1,0 +1,15 @@
+/* 文字的藍色區域寬度為600px */
+h1 {
+    width: 600px;
+    background-color: blueviolet;
+}
+
+/* 文字的藍色區域寬度為整個視窗的寬度 */
+h2 {
+    width: 100%;
+    background-color: brown;
+}
+
+p {
+    width: 100px;
+}

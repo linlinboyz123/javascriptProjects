@@ -1,0 +1,131 @@
+/* 修改訣竅:同一種佈局的內容設同一個class、仔細檢查每一個class所設定的樣式、由大到小慢慢佈局 */
+
+html {
+    /* 修改內文的字體 */
+    font-family: '華康細圓體';
+    /* 讓邊框不會吃到文本原本的大小 */
+    box-sizing: border-box;
+}
+
+/* 已body當基準去做版面的排序 */
+body {
+    /* 設置背景色 */
+    background-color: #60a9ff;
+    /* 改變顯示方式 */
+    display: flex;
+    /* 重直置中 */
+    justify-content: center;
+    /* 水平置中 */
+    align-items: center;
+    /* 高度置中微調 */
+    min-height: 100vh;
+}
+
+/* 白色的底板 */
+.panel {
+    /* 底板為白色 */
+    background-color: white;
+    /* 邊框銳角化 */
+    border-radius: 10px;
+    /* 讓每個邊界離文字都有段距離，上下15px左右25px */
+    padding: 15px 25px;
+    /* 寬度設為100%但是最高的寬度設定為960 */
+    width: 100%;
+    max-width: 960px;
+    /* flex預設為row，把他的方向改為column */
+    display: flex;
+    flex-direction: row;
+    /* 內容置中 */
+    text-align: center;
+}
+
+/* 在每一個區域下方都加一條邊框 */
+.plan {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+/* 除了最後一張圖片之外 */
+.plan:last-child {
+    border-bottom: none;
+}
+
+/* 設定圖片 */
+.picture1 {
+    /* 圖片距離下方的文字25px */
+    margin-bottom: 25px;
+    /* 圖片的寬度填滿白色底板，還是會有空白的空間是因為有設定padding */
+    width: 100%;
+    height: 40%;
+}
+
+/* 修改h2 */
+.name {
+    /* 設定顏色 */
+    color: #888888;
+    /* 設定文字的粗細 */
+    font-weight: 600;
+    /* 設定文字的間距 */
+    letter-spacing: 1px;
+}
+
+/* 改ul不會動到裡面li文字與文字的距離 */
+.feature {
+    /* 順時鐘:上50 左右0 下25px */
+    margin: 50px 0px 25px;
+    color: #016ff9;
+}
+
+/* li的設定 */
+.type {
+    /* 設定文字的粗細 */
+    font-weight: 600;
+    /* 設定文字的間距 */
+    letter-spacing: 1px;
+    /* 設定文字的大小 */
+    font-size: 12px;
+    /* 設定文字的行高，1.5倍 */
+    line-height: 1.5;
+    /* 設定文字上下的填充物 */
+    padding: 15px 0;
+    /* 把ul的符號刪掉 */
+    list-style: none;
+    /* 每個文字上方都有一條邊框 */
+    border-top: 1px solid #e1f1ff;
+}
+
+/* li最後一個文字 */
+.type:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+/* span的設定 */
+.price {
+    color: #016ff9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700px;
+}
+
+/* 設定a標籤樣式 */
+.join {
+    /* 為按鈕設一個邊框 */
+    border: 1px solid #9dd1ff;
+    /* 邊框為圓角 */
+    border-radius: 10px;
+    /* 顏色作調整 */
+    color: #348efe;
+    /* 顯示方式為inline-block */
+    display: inline-block;
+    /* 填充物上下15、左右35 */
+    padding: 15px 35px;
+    /* a標籤底下預設的底線去掉 */
+    text-decoration: none;
+    /* 邊界上下25、左右0 */
+    margin: 25px 0;
+    /* 當屬標懸停時，花一秒讓背景顏色變為e1f1ff */
+    transition: background-color 0.25s ease-in-out;
+}
+
+.join:hover {
+    background-color: #e1f1ff;
+}

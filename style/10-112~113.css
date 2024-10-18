@@ -1,0 +1,24 @@
+h1 {
+    font-size: 50px;
+}
+
+/* 500px以下的是原本的設定、500以上的會變成橘色 */
+@media (min-width:500px) {
+    h1 {
+        color: orange;
+    }
+}
+
+/* 500px以上的是橘色、1000以上的會變成淡藍色 */
+@media (min-width:1000px) {
+    h1 {
+        color: aqua;
+    }
+}
+
+/* 400以下的會變成藍色 */
+@media (max-width:400px) {
+    h1 {
+        color: blue;
+    }
+}

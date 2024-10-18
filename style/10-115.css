@@ -1,0 +1,44 @@
+nav {
+    /* 根據父元素放大字體大小1.5倍 */
+    font-size: 1.5em;
+    /* 顯示方式為flex */
+    display: flex;
+    /* 讓文字平均的分佈在一行 */
+    justify-content: space-between;
+}
+
+
+ul,
+li {
+    /* 顯示方式改為一行，預設是方塊(block) */
+    display: inline;
+    /* 邊框跟填充都為0 */
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    /* 給ul一個邊框 */
+    border: 1px solid black;
+    /* flex的成長速度為1 */
+    flex: 1;
+    /* 最大寬度為50% */
+    max-width: 50%;
+    /* 顯示方式為flex */
+    display: flex;
+    /* 平均的分佈在框內 */
+    justify-content: space-evenly;
+}
+
+@media (max-width: 339px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    nav,
+    nav ul {
+        /* 當畫面壓縮到339以下時，讓他的排列變成直的，且垂直置中對齊 */
+        flex-direction: column;
+        align-items: center;
+    }
+}

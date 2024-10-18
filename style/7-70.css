@@ -1,0 +1,16 @@
+/* 選擇文件的所有內容進行修改 */
+* {
+    background-color: hotpink;
+}
+
+/* 選擇h1還有h2進行修改 */
+h1,
+h2 {
+    color: crimson;
+    font-size: 30px;
+}
+
+/* 選擇一個標籤進行修改 */
+button {
+    text-decoration: line-through;
+}

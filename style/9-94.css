@@ -1,0 +1,37 @@
+section div {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: 0 10px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+section #middle {
+    background-color: aqua;
+}
+
+#Static #middle {
+    /* 位置設靜態(static)代表不會因為設定他的上下左右而改變他的位置，且他是每一個元素的預設值*/
+    position: static;
+}
+
+#Relative #middle {
+    /* 位置設相對的，他會以他現在的位置為基準點去做移動 */
+    position: relative;
+    top: 50px;
+}
+
+#absolute #middle {
+    /* 他會以父元素為基準去做定位，以body當基準點去做移動，所以他會到畫面的左上角(0,0)的位置*/
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#Fixed #middle {
+    /* 他會固定在頁面上，不會隨著視窗的上下移動而改變位置 */
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}

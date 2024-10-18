@@ -1,0 +1,41 @@
+h1 {
+    background-color: antiquewhite;
+    border: 5px solid saddlebrown;
+    /* 字體的0.7倍填充 */
+    padding: 0.7em;
+    width: 300px;
+    /* 字體*1.8倍，父元素為section */
+    font-size: 1.8em;
+    text-align: center;
+    /* 邊界設定auto可以自動左右對齊 */
+    margin: 20px auto;
+}
+
+/* 每兩個h2換一次背景色 */
+h1:nth-of-type(2n) {
+    background-color: aqua;
+}
+
+h1:nth-of-type(3n) {
+    background-color: aquamarine;
+}
+
+h1:nth-of-type(4n) {
+    background-color: blue;
+}
+
+/* section裡面的第一個h1 */
+section:first-of-type h1:nth-of-type(1) {
+    /* 旋轉180度成上下顛倒 */
+    transform: rotate(180deg);
+}
+
+section:first-of-type h1:nth-of-type(2) {
+    /* 高度不變、但寬度變大了1倍 */
+    transform: scale(2, 1);
+}
+
+section:first-of-type h1:nth-of-type(3) {
+    /* 往右平移200px */
+    transform: translateX(200px);
+}

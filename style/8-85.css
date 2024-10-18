@@ -1,0 +1,36 @@
+.one {
+    /* display進度超前，先不用教 */
+    display: inline-block;
+    /* 將每個區塊的寬度設為視窗的33%寬度，讓三個區塊都可以平行在一行上 */
+    width: 33%;
+    /* 讓文字在設定的區塊內置中 */
+    text-align: center;
+    /* 背景顏色設定為綠色 */
+    background-color: #436436;
+    /* 邊框速寫法 框厚度、樣式、顏色 */
+    border: 4px solid black;
+    /* 讓邊框的四角變圓，設定50%可以讓他直接變為圓形 */
+    border-radius: 10px;
+    /* 把邊框的長度(4px)內縮進文字的寬度裡面，這樣就不會超出原本文字設定的寬度了 */
+    box-sizing: border-box;
+}
+
+.two {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    background-color: #D6F599;
+    border: 4px dashed darkblue;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.three {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    background-color: #D2FF28;
+    border: 4px solid black;
+    border-radius: 50%;
+    box-sizing: border-box;
+}

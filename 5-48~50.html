@@ -1,0 +1,49 @@
+<!--關於input type類性的各種控健教學-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        <label for="account">帳號:</label>
+        <input type="text" placeholder="請輸入文字" id="account">
+    </p>
+    <p>
+        <label for="password">密碼:</label>
+        <input type="password" placeholder="請輸入密碼" id="password">
+    </p>
+    <p>
+        <label for="color">顏色:</label>
+        <input type="color" placeholder="請選擇顏色" id="color">
+    </p>
+    <p>
+        <label for="number">文字:</label>
+        <input type="number" placeholder="請輸入數字" id="number">
+    </p>
+
+    <hr>
+    <!--以下有四種按鈕類型-->
+    <button>form外面的按鈕預設不會提交表單</button>
+    <form action="hfisahfud">
+        <p>
+            <label for="word">請輸入字</label>
+            <input type="text" id="word">
+        </p>
+        <p>
+            <button>form裡面的按鈕預設會提交表單</button>
+        </p>
+        <p>
+            <input type="submit" value="type是submit的會提交表單">
+        </p>
+        <p>
+            <input type="button" value="type是button的都不會提交表單">
+        </p>
+    </form>
+</body>
+
+</html>

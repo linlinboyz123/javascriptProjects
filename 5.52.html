@@ -1,0 +1,31 @@
+<!--關於使用name來查詢網站內容的教學-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="https://www.google.com.tw/search"><!--如果要跳到查詢的頁面記得要加search-->
+        <h2>Google查詢</h2>
+        <p>
+            <label for="google">請輸入要在Goole查詢的關鍵字:</label>
+            <input type="text" id="google" name="q"><!--Google的name是q-->
+        </p>
+        <button>查詢</button>
+    </form>
+
+    <form action="https://www.youtube.com/results"><!--如果要跳到查詢的頁面記得要加results-->
+        <h2>Youtube查詢</h2>
+        <p>
+            <label for="YT"></label>
+            <input type="text" id="YT" name="search_query"><!--Youtube的name是search_query-->
+        </p>
+        <button>送出</button>
+    </form>
+</body>
+
+</html>

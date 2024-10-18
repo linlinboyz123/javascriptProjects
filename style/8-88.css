@@ -1,0 +1,34 @@
+body {
+    margin: 0px;
+}
+
+/* display:block他可以任意更改margin、padding、border、width以及height這些屬性 */
+h1 {
+    background-color: aquamarine;
+    height: 500px;
+}
+
+/* display:inline除了他本身那行可以更改之外，他無法透過maring、padding去佔其他行的位置，因為他不是block，且也無法設定width以及height因為他是跟著本身的文字的 */
+span {
+    /*會隨著文字的大小改變他的大小*/
+    font-size: 50px;
+    background-color: blue;
+    /*不會有改變*/
+    width: 500px;
+    /*不會有改變*/
+    height: 500px;
+}
+
+div {
+    /* 他可以擁有inline特性的同時，還可以修改margin、padding、border、width、height這些屬性 */
+    display: inline-block;
+    /* 藍色是寬高 */
+    width: 300px;
+    height: 300px;
+    background-color: burlywood;
+    border: 5px solid black;
+    /* 綠色是padding */
+    padding: 10px;
+    /* 橘色是margin */
+    margin: 0px 50px;
+}

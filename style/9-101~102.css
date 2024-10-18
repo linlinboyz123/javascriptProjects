@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+}
+
+img {
+    /* 解法一:先把圖片的寬度定下來，剩下來的空間就用margin把她平均補齊，calc是一個計算公式*/
+    width: 30%;
+    height: 400px;
+    margin: calc(10%/6);
+}

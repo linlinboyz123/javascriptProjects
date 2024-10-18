@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    /* 像素根據元素本身做調整 */
+    font-size: 50px;
+    border: 3px solid black;
+}
+
+section {
+    /* 百分比是根據上一個父元素長寬去做調整 */
+    width: 100%;
+    /* 這邊長度要用px改是因為如果用百分比他是從上到下可以分配位置的，因此最上面h1的空間會吃到百分比的位置，就會顯示不出來 */
+    height: 100px;
+    background-color: darkcyan;
+}
+
+div {
+    /* 根據前一個父元素(也就是section來做長寬的設定) */
+    display: inline-block;
+    margin: 0;
+    width: 33.3%;
+    height: 33.3%;
+    background-color: yellowgreen;
+}
